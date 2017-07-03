@@ -173,7 +173,7 @@ if(!class_exists('WC_Gateway_Payfort')) {
                 <?php
             }
 
-            $amount = $woocommerce->cart->total * $this->currency_multiplier[get_woocommerce_currency()];
+            $amount = (int) round($woocommerce->cart->total * 100);
 
             echo "<input name='start_amount' type='hidden' value='" . $amount . "'/>";
         }
