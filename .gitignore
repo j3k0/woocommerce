@@ -1,2 +1,4 @@
 # Get it from getcomposer.org
 composer.phar
+/vendor/
+/.project
